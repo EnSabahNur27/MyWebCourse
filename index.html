@@ -7,10 +7,13 @@
     <title>Basics of HTML, CSS and JavaScript</title>
     <script>
         function init()  {
-            me = {name: 'Jay', email:'jaypaulonis@alumni.pitt.edu', hobbies:['DND', 'The Division']}
+            let me = {name: 'Jay', email:'jaypaulonis@alumni.pitt.edu', hobbies:['DND', 'The Division']}
             document.getElementById("name").innerHTML = me.name;
             document.getElementById("email").innerHTML = me.email;
+            document.getElementById("hobbies").innerHTML = createListString(me);
+        }
 
+        function createListString(me)  {
             listString = "<ul>";
             
             for (const hobbie in me.hobbies) {
@@ -20,7 +23,7 @@
                 }
             }
             listString = listString+"</ul>";
-            document.getElementById("hobbies").innerHTML = listString;
+            return listString;
         }
     </script>
     <style>
