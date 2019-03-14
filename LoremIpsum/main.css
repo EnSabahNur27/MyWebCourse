@@ -1,0 +1,72 @@
+/* @import url('halloween.css'); */
+
+@media screen  {
+    body {color:red;
+            font-size: 100%;
+            background-color:lightskyblue;
+            padding: 10rem;}
+
+    header {text-align: center;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#22ac5b+0,39db6f+26,23db63+72,86eaa6+100 */
+                background: #22ac5b; /* Old browsers */
+                background: -moz-linear-gradient(left, #22ac5b 0%, #39db6f 26%, #23db63 72%, #86eaa6 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, #22ac5b 0%,#39db6f 26%,#23db63 72%,#86eaa6 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, #22ac5b 0%,#39db6f 26%,#23db63 72%,#86eaa6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22ac5b', endColorstr='#86eaa6',GradientType=1 ); /* IE6-9 */}
+
+    h2 {color:green;
+        font-style: italic;
+        font-size: 1.5em;
+                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3e2c7+0,c19e67+50,b68d4c+51,e9d4b3+100;L+Brown+3D */
+            background: #f3e2c7; /* Old browsers */
+            background: -moz-linear-gradient(left, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=1 ); /* IE6-9 */
+    }
+
+    h1 {font-family: 'Courier New', Courier, monospace;
+        font-size:2em;}
+
+    p {font-size: 18px;}
+
+    footer {font-weight: bold;}
+
+    li {font-variant: small-caps;}
+
+    header h2 {color:black;}
+    
+    a {text-decoration: none;
+       background-image: url(../html/images/chicken.jpeg);
+        background-repeat:repeat-x;}
+
+    #samuel span {color:black;}
+
+    .two {color: black;}
+
+    nav a:link { color:white;
+                ;
+    }
+    nav a:visited { color:purple;
+        background-color:red;
+    }
+    nav a:hover { color:red;
+        background-color:white;
+    }
+    nav a:active { color:purple;
+        background-color:red;
+    }
+    nav ul li {list-style:none;
+                display:inline;
+                padding:0px;}
+    
+    
+
+    p.two {font: bold 15px Arial, sans-serif;}
+
+    .oddclicks {color:lime;}
+    .evenclicks {color:blue;}
+
+    article {border-bottom-color:black;
+                border-bottom-style: solid;}
+}
