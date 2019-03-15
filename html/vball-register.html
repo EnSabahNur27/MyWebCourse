@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Volleyball Registration</title>
+    <style>
+        label {display:block;}
+        #CreditCard label {display:inline-block;}
+    </style>
+</head>
+<body> 
+    <form>
+        <fieldset>
+            <legend>Personal details</legend>
+            <label>First Name *<input type="text" name='firstName'></label>
+            <label>Last Name *<input type="text" name='lastName'></label>
+            <label>Date of Birth *<input type="date" name='dob'></label>
+            <label>Email *<input type="email" name='email'></label>
+            <label>Password *<input type="password" name='password'></label>
+            <label>Repeat Password *<input type="password" name='passwordVerify'></label>
+            <label>Your Github URL<input type="url" name='url'></label>
+            <label>Phone<input type="tel" name='phone'></label>
+            <br>
+            <label>Shoesize<input type="number" name='shoesize'></label>
+            <label>Skill Level (1 novice, 10 expert)<input type="number" name='skillLevel'></label>
+        </fieldset>
+        <fieldset><legend>Billing address</legend>
+                <label>Address *<input type="textarea" name='address'></label>
+                <label>Postal code *<input type="number" name='postalCode'></label>
+                <label>Country *<input type="" name='country'></label>
+        </fieldset>
+        <fieldset legend="Card details">
+            <fieldset id="CreditCard" title="Card type">
+                <label><input type="radio" name="cardType" value="visa">VISA</label>
+                <label><input type="radio" name="cardType" value="mc">Mastercard</label>
+                <label><input type="radio" name="cardType" value="amex">AMEX</label>
+            </fieldset>
+                <label>Address *<input type="textarea" name='address'></label>
+                <label>Postal code *<input type="number" name='postalCode'></label>
+                <label>Country *<input type="" name='country'></label>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

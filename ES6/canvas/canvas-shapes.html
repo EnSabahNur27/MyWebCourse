@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+    <script>
+        function init()  {
+            let canvas = document.getElementById("canvas");
+            let ctx = canvas.getContext('2d');
+
+            ctx.lineWidth=3;
+            ctx.strokeRect(0,100, 300, 100);
+            ctx.moveTo(300,100);
+            ctx.lineTo(400,75);
+            ctx.lineTo(400,225);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.moveTo(400,225);
+            ctx.lineTo(300,200);
+            ctx.lineTo(350,375);
+            ctx.closePath();
+            ctx.stroke();
+
+
+            //GL Symbol
+            ctx.beginPath();
+            //cirlePath.fillStyle('green')
+            ctx.arc(800,200,100,0,2*Math.PI);
+            ///ctx.fill();
+            ctx.closePath();
+            ctx.fillStyle = 'green';
+            ctx.stroke();
+            ctx.moveTo(895,170);
+            ctx.lineTo(975,75);
+            ctx.stroke();
+            ctx.moveTo(705,170);
+            ctx.lineTo(625,75);
+            ctx.lineTo(975,75);
+            ctx.stroke();
+
+
+
+            ctx.moveTo(895,230);
+            ctx.lineTo(975,325);
+            ctx.stroke();
+            ctx.moveTo(705,230);
+            ctx.lineTo(625,325);
+            ctx.lineTo(975,325);
+            ctx.stroke();
+
+        }
+    </script>
+</head>
+<body onload="init()">
+    <canvas id="canvas" width="1500" height="1500"></canvas>
+</body>
+</html>
